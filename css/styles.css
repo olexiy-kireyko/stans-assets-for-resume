@@ -13,6 +13,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #242424;
+  margin: 0;
+  /* overflow: hidden; */
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -47,18 +51,24 @@ img {
 
 .container {
   max-width: 1440px;
+  /* width: 100vw; */
   padding: 0 20px;
   margin: 0 auto;
 }
 
+.header {
+  /* width: 100vw; */
+}
+
 .header-wrapper {
-  width: 100%;
   position: absolute;
-  top: 10px;
-  left: 80px;
+  width: calc(100vw - 2 * 80px);
+  padding: 10px 80px;
+
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
+
   align-items: center;
   z-index: 10;
 }
@@ -183,25 +193,26 @@ img {
 }
 
 .hero.first-bg {
-  background-image: url(../img/hero-bg-first.png);
+  background-image: url(../img/hero-bg-first-min.png);
 }
 
 .hero.second-bg {
-  background-image: url(../img/hero-bg-second.png);
+  background-image: url(../img/hero-bg-second-min.png);
 }
 
 .hero.third-bg {
-  background-image: url(../img/hero-bg-third.png);
+  background-image: url(../img/hero-bg-third-min.png);
 }
 
 .hero {
-  background-image: url(../img/hero-bg.png);
+  /* background-image: url(../img/hero-bg.png); */
   background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 150px;
   padding-bottom: 350px;
   position: relative;
   transition: background-image 400ms ease-in-out;
+  overflow: hidden;
 }
 
 .hero-header {
@@ -295,8 +306,9 @@ img {
 .hero-social-list {
   position: absolute;
   top: 42.5%;
-  left: 100%;
-  transform: translateX(-100%);
+  right: 16px;
+  /* left: 100%;
+  transform: translateX(-100%); */
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 12px 1px rgba(29, 51, 107, 0.25);
@@ -603,7 +615,7 @@ img {
 
 .achievements-item {
   position: relative;
-  width: calc((100% - (24px * 3)) / 4);
+  max-width: calc((100vw - (24px * 3)) / 4);
 }
 
 .achievements-img {
@@ -882,10 +894,11 @@ textarea.contacts-input {
 }
 
 .footer-first-wrapper {
-  background-image: url("../img/footer-bg.png");
+  /* background-image: url("../img/footer-bg.png"); */
+  background-image: url("../img/oie_aoM3PrtdHDLJ.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 300px 120px 108px;
+  padding: 200px 120px 80px;
   display: flex;
   gap: 136px;
 }
@@ -962,7 +975,7 @@ textarea.contacts-input {
   display: flex;
   flex-direction: row;
   gap: 500px;
-  padding: 20px 120px 20px 120px;
+  padding: 0 120px 20px;
 }
 
 .footer-right-text {

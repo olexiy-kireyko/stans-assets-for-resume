@@ -304,7 +304,7 @@ img {
 
 .hero-social-list {
   position: absolute;
-  top: 42.5%;
+  top: 27%;
   left: 100%;
   transform: translateX(-100%);
   display: flex;
@@ -665,10 +665,12 @@ textarea.contacts-input {
 }
 
 .footer-first-wrapper {
-  background-image: url("../img/footer-bg.png");
+  /* background-image: url("../img/footer-bg.png"); */
+  background-image: url("../img/oie_aoM3PrtdHDLJ.png");
+
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 300px 120px 108px;
+  padding: 200px 120px 80px;
   display: flex;
   gap: 136px;
 }
@@ -745,7 +747,7 @@ textarea.contacts-input {
   display: flex;
   flex-direction: row;
   gap: 500px;
-  padding: 20px 120px 20px 120px;
+  padding: 20px 120px;
 }
 
 .footer-right-text {

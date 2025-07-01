@@ -617,10 +617,12 @@ textarea.contacts-input {
 }
 
 .footer-first-wrapper {
-  background-image: url("../img/footer-bg.png");
+  /* background-image: url("../img/footer-bg.png"); */
+  background-image: url("../img/oie_aoM3PrtdHDLJ.png");
+
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 300px 120px 108px;
+  padding: 200px 120px 80px;
   display: flex;
   gap: 136px;
 }
